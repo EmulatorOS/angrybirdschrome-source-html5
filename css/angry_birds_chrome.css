@@ -15,6 +15,7 @@ html {
 	width: 100%;
 	background: #C8ECFE url(../images/bgimage.png) no-repeat top center;
 	background-size: cover;
+	position: fixed
 }
 
 body {
@@ -42,16 +43,15 @@ body {
 img {
 	border: 0px;
 }
-
 #playn-root {
 	position: relative;
-	margin: auto;
 	z-index: 100;
-	border: 2px solid #0b3657;
-	border-radius: 3px;
-	width: 640px; /* initial size for loading = SD size */
-	height: 480px;
 }
+#playn-root, .gamecont, canvas, .content-table {
+	width: 100%!important;
+    height: 100%!important;
+}
+
 
 #loading {
 	margin-top: 166px;
@@ -64,6 +64,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 5px;
+	display: none;
 }
 
 .buttoncontainer {
@@ -71,6 +72,7 @@ img {
 	margin: 0px 0px 5px 0px;
 	padding: 0px;
 	white-space: nowrap;
+	display: none;
 }
 
 .gamecont {
@@ -125,15 +127,10 @@ a,a:VISITED {
 }
 
 .content-table {
-	margin-top: 0px;
-	margin-left: auto;
-	margin-right: auto;
+	
 	border-spacing: 0px;
 }
 
-.content-table td {
-	vertical-align: top;
-}
 
 .require-ipad {
 	position: absolute;
@@ -250,6 +247,7 @@ a,a:VISITED {
 	width: 96px;
 	height: 41px;
 	background: url(../images/INGAME_WEB_BUTTONS.png);
+	display: none;
 }
 
 #login.loginButton {
@@ -272,6 +270,7 @@ a,a:VISITED {
 	display: inline-block;
 	clear:both;
 	padding-left: 3px;
+	display: none;
 }
 
 #faqButton {
@@ -281,6 +280,7 @@ a,a:VISITED {
 	height: 41px;
 	background-position: -433px -44px;
 	vertical-align: top;
+	display: none;
 }
 
 #faqButton:hover {
@@ -299,16 +299,19 @@ a,a:VISITED {
 	background-position: -47px -130px;
 	vertical-align: top;
 	margin-top: 2px;
+	display: none;
 }
 
 .twitter-share-button {
 	height: 25px !important;
 	width: 95px !important;
+	display: none;
 }
 
 #loginInfo {
 	text-align: right;
 	height: 22px;
+	display: none;
 }
 
 #tooltip {
@@ -323,6 +326,7 @@ a,a:VISITED {
 	margin-left: auto;
 	margin-right: 5px;
 	margin-bottom: 29px;
+	
 }
 
 #spaceButton:hover {
@@ -346,30 +350,6 @@ a,a:VISITED {
 	height: 149px;
 }
 
-#sidebarIframe {
-	position: relative;
-	width: 200px;
-	height: 155px;
-	z-index: 150;
-	border: none;
-	transition: opacity 1s linear;
-	transition-delay: 1.0s;
-	-webkit-transition: opacity 1s linear;
-	-webkit-transition-delay: 1.0s;
-	-moz-transition: opacity 1s linear;
-	-moz-transition-delay: 1.0s;
-	-ms-transition: opacity 1s linear;
-	-ms-transition-delay: 1.0s;
-}
-
-.openSidebarItem {
-	opacity: 1.0;
-	pointer-events: auto;
-}
-
-.closedSidebarItem {
-	pointer-events: none;
-}
 
 #videoAdContainer {
 	width: 340px;
