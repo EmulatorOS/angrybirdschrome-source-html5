@@ -19,8 +19,20 @@
     <link href='http://fonts.googleapis.com/css?family=Terminal+Dosis:800' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/angry_birds_chrome.css" type="text/css">
     <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/aknpkdffaafgjchaibgeefbgmgeghloj">
-    
-
+    <link rel="stylesheet" href="/main.css" type="text/css">
+    <link rel="stylesheet" href="/contentpage.css" type="text/css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <noscript>Your browser doesn't have JavaScript enabled. Please enable JavaScript or switch to a browser that
+        supports it.</noscript>
+ <style>
+     html { 
+  scroll-behavior: smooth; 
+}
+      	body {
+        	font-family: 'Syne', sans-serif;
+          background-color: #000000;
+      }
+  </style>
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-23082676-1']);
@@ -120,8 +132,12 @@
       </script>
 
       
-
-          <table class="content-table">
+<div class="content-wrapper">
+  <div class="main-content">
+                <div class="content-container" style="
+                width: fit-content;
+                ">
+          <table class="content-table" style="width: fit-content;">
             <tr>
               <td>
 
@@ -130,7 +146,7 @@
             <div id='loginInfo'></div>
             
             
-            <div id='gameDiv' style="display: inline-block;">
+            <div id='gameDiv' >
               <div id='playn-root'>
                 <div id="loading">
                   <img src="images/loading_image_bird.png" />
@@ -192,6 +208,14 @@
             </td>
             </tr>
           </table>
+          <div class="bar">
+            <div class="bar-left">
+                <h1 id="content-title">Angry Birds Chrome</h1>
+          
+             </div>  
+            </div>
+            </div>
+          </section>
 
       
       
@@ -243,6 +267,10 @@
                     }, 500);
       }
     </script>
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script>
+    <script src="/main.js"></script>
+ 
+    <script src="/contentpage.js"></script>
 
   </body>
 </html>

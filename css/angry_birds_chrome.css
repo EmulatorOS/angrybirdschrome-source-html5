@@ -13,7 +13,6 @@
 html {
 	height: 100%;
 	width: 100%;
-	background: #C8ECFE url(../images/bgimage.png) no-repeat top center;
 	background-size: cover;
 	position: fixed
 }
@@ -48,7 +47,6 @@ img {
 	z-index: 100;
 }
 #playn-root, .gamecont, canvas, .content-table {
-	width: 100%!important;
     height: 100%!important;
 }
 
@@ -127,7 +125,7 @@ a,a:VISITED {
 }
 
 .content-table {
-	
+	background: #000 url(../validate/sorry-pigs.png) no-repeat bottom right;
 	border-spacing: 0px;
 }
 
